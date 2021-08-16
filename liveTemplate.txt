@@ -1,0 +1,40 @@
+1. test
+
+Abbreviation: test
+Description: Test case, JUnit 5
+Applicable:
+Kotlin
+-Class
+
+Template text:
+@Test
+fun `should $DESCRIPTION$`() {
+    //given
+    $GIVEN$
+
+    //when
+    $WHEN$
+
+    //then
+    $THEN$
+
+}
+============================
+2. nested
+
+Abbreviation: nested
+Description: Nested Test Class, JUnit 5
+Applicable:
+Kotlin
+-Class
+-Object declaration
+-Other
+
+Template text:
+@Nested
+@DisplayName("$DISPLAY_NAME$")
+@TestInstance(Lifecycle.PER_CLASS)
+inner class $CLASS_NAME$ {
+
+    $BODY$
+}
