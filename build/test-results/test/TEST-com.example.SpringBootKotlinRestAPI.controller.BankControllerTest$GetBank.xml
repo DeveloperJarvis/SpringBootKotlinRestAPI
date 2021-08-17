@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GET /api/banks/{accountNumber}" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-07-26T19:36:38" hostname="ubuntu" time="0.079">
+  <properties/>
+  <testcase name="should return the bank with the given account number()" classname="com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank" time="0.052"/>
+  <testcase name="should return NOT FOUND if the account number does not exist()" classname="com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank" time="0.026"/>
+  <system-out><![CDATA[2021-07-26 19:36:38.009  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank], using SpringBootContextLoader
+2021-07-26 19:36:38.011  INFO 29840 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-26 19:36:38.012  INFO 29840 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank]: GetBank does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-26 19:36:38.015  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.SpringBootKotlinRestAPI.SpringBootKotlinRestApiApplication for test class com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBank
+2021-07-26 19:36:38.018  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-26 19:36:38.019  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64f2a4d9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5f721cb9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2bcf145d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7687da76, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7226c13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48fa2f9a, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bc4b724, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53d88a40, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@478e36dc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5e914748, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60d2b629, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@77cfaaf9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41c14a0a]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks/1234
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.SpringBootKotlinRestAPI.controller.BankController
+           Method = com.example.SpringBootKotlinRestAPI.controller.BankController#getBank(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"accountNumber":"1234","trust":3.14,"transactionFee":17}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks/does_not_exist
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.SpringBootKotlinRestAPI.controller.BankController
+           Method = com.example.SpringBootKotlinRestAPI.controller.BankController#getBank(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.util.NoSuchElementException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"56"]
+     Content type = text/plain;charset=UTF-8
+             Body = Could not find a bank with account number does_not_exist
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
