@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GET /api/banks</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GET /api/banks</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.SpringBootKotlinRestAPI.controller.html">com.example.SpringBootKotlinRestAPI.controller</a> &gt; BankControllerTest$GetBanks</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.594s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should ()</td>
+<td class="success">0.594s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:36:35.231 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.6.0-SNAPSHOT)
+
+2021-07-26 19:36:35.527  INFO 29840 --- [    Test worker] c.e.S.controller.BankControllerTest      : Starting BankControllerTest using Java 16.0.2 on ubuntu with PID 29840 (started by ubuntu in /home/ubuntu/Downloads/SpringBootKotlinRestAPI)
+2021-07-26 19:36:35.532  INFO 29840 --- [    Test worker] c.e.S.controller.BankControllerTest      : No active profile set, falling back to default profiles: default
+2021-07-26 19:36:37.129  INFO 29840 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-07-26 19:36:37.321  INFO 29840 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-07-26 19:36:37.321  INFO 29840 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-07-26 19:36:37.322  INFO 29840 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-07-26 19:36:37.345  INFO 29840 --- [    Test worker] c.e.S.controller.BankControllerTest      : Started BankControllerTest in 2.108 seconds (JVM running for 3.501)
+2021-07-26 19:36:37.389  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBanks], using SpringBootContextLoader
+2021-07-26 19:36:37.391  INFO 29840 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBanks]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-26 19:36:37.391  INFO 29840 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBanks]: GetBanks does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-26 19:36:37.396  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.SpringBootKotlinRestAPI.SpringBootKotlinRestApiApplication for test class com.example.SpringBootKotlinRestAPI.controller.BankControllerTest$GetBanks
+2021-07-26 19:36:37.399  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-26 19:36:37.401  INFO 29840 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5645aa2d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@442a0ab8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@fdcfc78, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@33d7f425, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48b824b0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c5398d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@3404801b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@38fe3c62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@31ea0269, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@713fb1b1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@61abf3d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@287fceae, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49676882]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.SpringBootKotlinRestAPI.controller.BankController
+           Method = com.example.SpringBootKotlinRestAPI.controller.BankController#getBanks()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;accountNumber&quot;:&quot;1234&quot;,&quot;trust&quot;:3.14,&quot;transactionFee&quot;:17},{&quot;accountNumber&quot;:&quot;1010&quot;,&quot;trust&quot;:37.0,&quot;transactionFee&quot;:0},{&quot;accountNumber&quot;:&quot;5678&quot;,&quot;trust&quot;:0.0,&quot;transactionFee&quot;:100}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Jul 26, 2021, 7:36:39 PM</p>
+</div>
+</div>
+</body>
+</html>
